@@ -1,0 +1,42 @@
+version: '3.1'
+
+services:
+    influxdb:
+        image: influxdb:1.8.4
+        restart: always
+        ports:
+            - 8086:8086
+    python:
+        build:
+            context: python
+            dockerfile: Dockerfile
+        ports:
+            - 7000:7000
+        depends_on:
+            - influxdb
+    grafana:
+        image: grafana/grafana:7.5.3
+        restart: always
+        ports:
+            - 3000:3000
+
+    app:
+        build:
+            context: grafana
+            dockerfile: Dockerfile
+        depends_on: 
+            - influxdb
+            - grafana
+        environment:
+            GRAFANA: grafana
+            
+
+
+
+
+
+        
+        
+
+
+

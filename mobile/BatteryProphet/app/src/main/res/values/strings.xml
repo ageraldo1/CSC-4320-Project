@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BatteryProphet</string>
+
+    <string-array name="invervals">
+        <item>1 secs</item>
+        <item>5 secs</item>
+        <item>10 secs</item>
+        <item>30 secs</item>
+        <item>60 secs</item>
+        <item>90 secs</item>
+        <item>180 secs</item>
+    </string-array>
+
+    <string name="SERVER">"192.168.0.41"</string>
+    <string name="PORT">7000</string>
+
+
+</resources>

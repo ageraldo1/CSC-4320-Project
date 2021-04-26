@@ -1,0 +1,7 @@
+{
+    "name"     : "Demo account", 
+    "email"    : "demo@demo.com", 
+    "login"    : "demo", 
+    "password" : "demo", 
+    "role"     : "Viewer"
+}

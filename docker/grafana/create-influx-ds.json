@@ -1,0 +1,12 @@
+{
+    "name"           : "InfluxDB", 
+    "type"           : "influxdb", 
+    "access"         : "proxy",
+    "isDefault"      : true,
+    "url"            : "http://influxdb:8086",
+    "user"           : "root",
+    "database"       : "CSC4320",
+    "secureJsonData" : {
+        "password" : "root"
+    }
+}
